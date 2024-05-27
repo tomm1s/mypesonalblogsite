@@ -1,0 +1,329 @@
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family:Helvetica,Sans-serif;
+  overflow-x:hidden;
+}
+h1 {
+  text-align:center;
+}
+.page {
+  width:100vw;
+  height:100vh;
+  perspective:1px;
+  perspective-origin: center center;
+  overflow-x:hidden;
+}
+.overflow {
+  position:absolute;
+  width:100vw;
+  height:80vh;
+  top:100vh;
+  background-color:#FFF;
+}
+#parallax {
+  transform-style:preserve-3d;
+  height:120vh;
+}
+
+.keyart_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+#keyart-0 {
+  background-image: url('background.jpg');
+  transform:translate3d(-11px,-46px,-1.3px) scale(2.3);
+}
+#keyart-1 {
+  height: 120px;
+  width: 120px;
+  background-image: url('moon.jpg');
+  transform:translate3d(0,-47px,-.7px) scale(1.7);
+}
+#keyart-2 {
+  height: 150px;
+  width: 200px;
+  background-image: url('Youtube_logo.png'); 
+  transform:translate3d(1000px,-47px,-.4px) scale(1.6);
+}
+.p{
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+}
+.h1-cool {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+  }
+.bodystyle{
+    background-color: white;
+    text-decoration: none;
+    text-shadow: 0cap;
+    width: auto;
+}
+.child {
+    text-align: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .menu-item {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #444;
+  }
+
+  .intro {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    margin: 2rem 0;
+  }
+  
+  .cta-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #444;
+  }
+
+  .h1-cool {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #3e8e41;
+  }
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  i {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  hr {
+    border: none;
+    height: 1px;
+    color: #ccc;
+    background-color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .social-table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .social-table td {
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-table td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-table img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .social-table a {
+    text-decoration: none;
+    color: #333;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  i {
+    font-style: italic;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  p:first-child {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  p:last-child {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  .social-table {
+    display: table;
+    width: 100%;
+  }
+  
+  .social-table tr {
+    display: table-row;
+  }
+  
+  .social-table td {
+    display: table-cell;
+    width: 33.33%;
+    padding: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+
+    nav ul li {
+      margin: 0 0;
+    }
+    button{
+      width: 90%;
+      height: 100%;
+    }
+    .menu-item {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 13px 13px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 0;
+      border-radius: 0;
+      transition: background-color 0.3s ease;
+    }
+    #keyart-2 {
+      height: 150px;
+      width: 200px;
+      background-image: url('Youtube_logo.png'); 
+      transform:translate3d(250px,-47px,-.7px) scale(1.0);
+    }
+    .social-table {
+      display: block;
+    }
+  
+    .social-table tr {
+      display: block;
+    }
+  
+    .social-table td {
+      display: inline-block;
+      width: auto;
+      margin-bottom: 10px;
+    }
+    .iframe{
+      display:block;
+    }
+  }
