@@ -3,77 +3,77 @@ const path = require('path');
 const app = express();
 const collection = require('./mongodb'); // Assuming mongodb.js is also in src directory
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '../public')));
+// Serve static files from the 'docs' directory
+app.use(express.static(path.join(__dirname, '../docs')));
 
 // Example of serving specific HTML files at specific routes
 app.get('/home.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'home.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'home.html'));
 });
 
 app.get('/about.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'about.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'about.html'));
 });
 
 app.get('/contacts.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'contacts.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'contacts.html'));
 });
 
 app.get('/lifestyle.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'lifestyle.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'lifestyle.html'));
 });
 
 app.get('/myblog.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'myblog.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'myblog.html'));
 });
 
 // Serve other static files like CSS, images, etc.
 app.get('/style.css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'style.css'));
+    res.sendFile(path.join(__dirname, '../docs', 'style.css'));
 });
 
 app.get('/script.js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'script.js'));
+    res.sendFile(path.join(__dirname, '../docs', 'script.js'));
 });
 
 app.get('/image.jpg', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'image.jpg'));
+    res.sendFile(path.join(__dirname, '../docs', 'image.jpg'));
 });
 
 app.get('/tiktok.png', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'tiktok.png'));
+    res.sendFile(path.join(__dirname, '../docs', 'tiktok.png'));
 });
 
 app.get('/twitch.png', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'twitch.png'));
+    res.sendFile(path.join(__dirname, '../docs', 'twitch.png'));
 });
 
 app.get('/youtube.jpg', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'youtube.jpg'));
+    res.sendFile(path.join(__dirname, '../docs', 'youtube.jpg'));
 });
 
 app.get('/videofile.mp4', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'videofile.mp4'));
+    res.sendFile(path.join(__dirname, '../docs', 'videofile.mp4'));
 });
 
 app.get('/login.css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'login.css'));
+    res.sendFile(path.join(__dirname, '../docs', 'login.css'));
 });
 
 app.get('/signup.css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'signup.css'));
+    res.sendFile(path.join(__dirname, '../docs', 'signup.css'));
 });
 
 app.get('/background.jpg', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'background.jpg'));
+    res.sendFile(path.join(__dirname, '../docs', 'background.jpg'));
 });
 
 app.get('/moon.jpg', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'moon.jpg'));
+    res.sendFile(path.join(__dirname, '../docs', 'moon.jpg'));
 });
 
 app.get('/Youtube_logo.png', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'Youtube_logo.png'));
+    res.sendFile(path.join(__dirname, '../docs', 'Youtube_logo.png'));
 });
 
 app.use(express.json());
@@ -85,7 +85,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/signup", (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'signup.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'signup.html'));
 });
 
 app.post("/signup", async (req, res) => {
@@ -113,6 +113,6 @@ app.post('/login', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+app.listen(5000, () => {
+    console.log("Server is running on port 5000");
 });
